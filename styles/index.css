@@ -49,3 +49,7 @@ p {font-size: 16px;}
 #topButton:hover {
   background-color: #ddd;
 }
+
+.modal {
+  color: #555555;
+}
