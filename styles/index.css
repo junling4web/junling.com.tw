@@ -1,39 +1,71 @@
 
-body {
-  font: 20px Montserrat, sans-serif;
-  line-height: 1.8;
-  color: #f5f6f7;
+.margin {
+  margin-bottom: 45px;
 }
-p {font-size: 16px;}
-.margin {margin-bottom: 45px;}
-.bg-1 { 
-  background-color: #474e5d; /* White */
-  color: #ffffff;
-}
-.bg-2 { 
-  background-color: #ffffff; /* Black Gray */
-  color: #555555;
-}
-.bg-3 { 
-  background-color: #2f2f2f; 
-  color: #fff;
-}
+
 .container-fluid {
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
+/* maga menu */
 .navbar {
   padding-top: 15px;
   padding-bottom: 15px;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
-  font-size: 12px;
   letter-spacing: 5px;
 }
+
+/* logo */
+.navbar-brand .title {
+  font-size: 1.2em;
+}
+.navbar-brand .subtitle {
+  font-size: 0.6em;
+}
+
+/* menu */
 .navbar-nav  li a:hover {
   color: #1abc9c !important;
 }
+.navbar-nav .title {
+  font-size: 1.4em;
+}
+.navbar-nav .subtitle {
+  font-size: 1em;
+}
+
+/* body */
+body {
+  font: 1.2em Montserrat, sans-serif;
+  line-height: 2em;
+  color: #f5f6f7;
+}
+p {
+  font-size: 1.4em;
+}
+.bg-1 { 
+  background-color: #474e5d;
+  color: #ffffff;
+}
+.bg-2 { 
+  background-color: #ffffff; 
+  color: #555555;
+}
+.bg-3 { 
+  background-color: #2f2f2f; 
+  color: #fff;
+}
+.bg-4 { 
+  background-color: #ffffff; 
+  color: #555555;
+}
+.bg-4 li {
+  font-size: 1.4em;
+}
+
 #topButton {
   display: none;
   position: fixed;
@@ -45,11 +77,22 @@ p {font-size: 16px;}
   border-radius: 5px;
   text-decoration: none;
 }
-
 #topButton:hover {
   background-color: #ddd;
 }
 
-.modal {
-  color: #555555;
+.border-right-white {
+  border-right: 1px solid #eee;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.bk-white {
+  background-color: white;
 }
