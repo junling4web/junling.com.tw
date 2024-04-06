@@ -9,16 +9,16 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="scripts/index.js"></script>
-  <link rel="stylesheet" href="styles/index.css?t=1">
+  <script src="scripts/index.js?t=1"></script>
+  <link rel="stylesheet" href="styles/index.css?t=2">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button id="toggleButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
@@ -32,28 +32,28 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="index.html#bg-1">
+          <a href="index.html#about">
             <span class="title">關於竣英</span>
             <br />
             <span class="subtitle">About</span>
           </a>
         </li>
         <li>
-          <a href="index.html#bg-2">
+          <a href="index.html#service">
             <span class="title">服務範圍</span>
             <br />
             <span class="subtitle">Service</span>
           </a>
         </li>
         <li>
-          <a href="index.html#bg-3">
+          <a href="index.html#product">
             <span class="title">產品簡介</span>
             <br />
             <span class="subtitle">Product</span>
           </a>
         </li>
         <li>
-          <a href="index.html#bg-4">
+          <a href="index.html#experience">
             <span class="title">工程經驗</span>
             <br />
             <span class="subtitle">Experience</span>
@@ -71,7 +71,7 @@
   </div>
 </nav>
 
-<div id="bg-1" class="container-fluid bg-1 text-center">
+<div id="about" class="container-fluid bg bg-light-gray text-center">
   <h1>關於竣英</h1>
   <br />
   <!-- 公司簡介 s -->
@@ -131,7 +131,7 @@
 
 </div>
 
-<div id="bg-2" class="container-fluid bg-2 text-center">
+<div id="service" class="container-fluid bg bg-white text-center">
   <h1>服務範圍</h1>
   <br />
   <div class="row">
@@ -460,7 +460,7 @@
   </div>
 </div>
 
-<div id="bg-3" class="container-fluid bg-3 text-center">
+<div id="product" class="container-fluid bg bg-gray text-center">
   <h1>產品簡介</h1>
   <hr />
   <h2>可程式控制器PLC</h2>
@@ -498,7 +498,7 @@
   </div>
 </div>
 
-<div id="bg-4" class="container-fluid bg-4 text-center">    
+<div id="experience" class="container-fluid bg bg-white text-center">    
   <!-- 工程經驗 s -->
   <h1>工程經驗</h1>
   <br />
@@ -506,7 +506,7 @@
     <div class="col-sm-2">
     </div>
     <div class="col-sm-8 text-left">
-      <h2><span class="glyphicon glyphicon-bookmark"></span> 台積電 Fab 2－ 氣櫃盤體修改</h2>
+      <h2><span class="glyphicon glyphicon-bookmark"></span> 台積電 Fab 2 － 氣櫃盤體修改</h2>
       <ol>
         <li>現場氣櫃操作盤 整改</li>
         <li>PLC/SCADA 軟體修改/試車(AB PLC)</li>
@@ -521,7 +521,7 @@
     <div class="col-sm-2">
     </div>
     <div class="col-sm-8 text-left">
-      <h2><span class="glyphicon glyphicon-bookmark"></span> 台積電 Fab 12P4－ CaCl2加藥系統擴充</h2>
+      <h2><span class="glyphicon glyphicon-bookmark"></span> 台積電 Fab 12P4 － CaCl2 加藥系統擴充</h2>
       <ol>
         <li>系統動力盤/控制盤/操作盤 設計製作</li>
         <li>PLC/SCADA/HMI 軟體設計/製作/試車(AB PLC)</li>
@@ -535,7 +535,7 @@
     <div class="col-sm-2">
     </div>
     <div class="col-sm-8 text-left">
-      <h2><span class="glyphicon glyphicon-bookmark"></span> 日商菱洋－ 力晶 P3  Master PLC 升級工程</h2>
+      <h2><span class="glyphicon glyphicon-bookmark"></span> 日商菱洋 － 力晶 P3 Master PLC 升級工程</h2>
       <ol>
         <li>Master PLC控制盤 設計製作</li>
         <li>PLC/SCADA 軟體整改/轉移/試車(AB PLC)</li>
@@ -550,7 +550,7 @@
     <div class="col-sm-2">
     </div>
     <div class="col-sm-8 text-left">
-      <h2><span class="glyphicon glyphicon-bookmark"></span> 漢華水處理－ 台積 F6 氨氮廢水輸送工程</h2>
+      <h2><span class="glyphicon glyphicon-bookmark"></span> 漢華水處理 － 台積 F6 氨氮廢水輸送工程</h2>
       <ol>
         <li>系統動力控制盤(MCC)/設計製作</li>
         <li>PLC/SCADA軟體設計/製作/試車(GE PLC)</li>
@@ -564,7 +564,7 @@
     <div class="col-sm-2">
     </div>
     <div class="col-sm-8 text-left">
-      <h2><span class="glyphicon glyphicon-bookmark"></span> 友達光電(AU) －廢氣系統(Scrubber) 大數據上傳工程</h2>
+      <h2><span class="glyphicon glyphicon-bookmark"></span> 友達光電(AU) － 廢氣系統（Scrubber）大數據上傳工程</h2>
       <ol>
         <li>圖控 設計製作</li>
         <li>大數據技術 設計製作</li>
@@ -583,7 +583,7 @@
     <div class="col-sm-2">
     </div>
     <div class="col-sm-8 text-left">
-      <h2><span class="glyphicon glyphicon-wrench"></span> 日商栗田－ 美光 A2 H2O2 系統新建工程</h2>
+      <h2><span class="glyphicon glyphicon-wrench"></span> 日商栗田 － 美光 A2 H2O2 系統新建工程</h2>
       <ol>
         <li>系統動力盤/控制盤/現場操作盤 設計製作</li>
         <li>PLC/SCADA/HMI 軟體設計/製作/試車(AB PLC)</li>
@@ -612,7 +612,7 @@
     <div class="col-sm-2">
     </div>
     <div class="col-sm-8 text-left">
-      <h2><span class="glyphicon glyphicon-wrench"></span> 台積電Fab 14P3－ AWR系統擴充</h2>
+      <h2><span class="glyphicon glyphicon-wrench"></span> 台積電 Fab 14P3 － AWR系統擴充</h2>
     </div>
     <div class="col-sm-2">
     </div>
@@ -642,7 +642,7 @@
     <div class="col-sm-2">
     </div>
     <div class="col-sm-8 text-left">
-      <h2><span class="glyphicon glyphicon-wrench"></span> 德商麥士特－ 世界先進二廠 無塵室空調系統擴充工程</h2>
+      <h2><span class="glyphicon glyphicon-wrench"></span> 德商麥士特 － 世界先進二廠 無塵室空調系統擴充工程</h2>
     </div>
     <div class="col-sm-2">
     </div>
@@ -652,7 +652,7 @@
     <div class="col-sm-2">
     </div>
     <div class="col-sm-8 text-left">
-      <h2><span class="glyphicon glyphicon-wrench"></span> 瑞健－製程冷卻水改造工程</h2>
+      <h2><span class="glyphicon glyphicon-wrench"></span> 瑞健 － 製程冷卻水改造工程</h2>
       <ol>
         <li>系統操作盤/現場施工 設計製作(西門子PLC)</li>
         <li>PLC/HMI 軟體設計/製作/試車</li>
@@ -666,7 +666,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="container-fluid bg-1 text-center">
+<footer class="container-fluid bg-light-gray text-center">
   <p>版權所有 竣英自動化有限公司 © JunLing AUTOMATION CO., LTD.</p> 
 </footer>
 
