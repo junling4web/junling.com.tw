@@ -83,6 +83,61 @@ p {
   display: block;
 }
 
+/* thumbnail image */
+.thumbnail .border {
+  border: lightgray 1px solid;
+  width:100%;
+}
+
+/* footer */
+footer {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+footer p {
+  margin: 0em;
+}
+.container-footer {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.footer-body {
+  padding-top: 0em;
+  display: inline-block;
+}
+.footer-contact {
+  display: inline-table;
+  font-size: 1.4em;
+  letter-spacing: 0.5em;
+  line-height: 2em;
+}
+.contact-button {
+  text-align: center;
+  width: 5em;
+  padding: 0.5em 0em 0.5em 0.5em;
+  border-radius: 5px;
+}
+.contact-button:hover {
+  text-decoration: none;
+}
+.bg-light-gray .contact-button {
+  border: white 1px solid;
+  color: white;
+}
+.bg-light-gray .contact-button:hover {
+  color: white;
+}
+.bg-white .contact-button {
+  border: #555555 1px solid;
+  color: #555555;
+}
+.bg-white .contact-button:hover {
+  color: #555555;
+}
+.contact-text {
+  padding-left: 0.5em;
+}
+
 /* mobile */
 @media only screen and (max-width: 1200px) {
   /* body */
@@ -91,7 +146,27 @@ p {
   }
 }
 
-/* mobile */
+@media only screen and (max-width: 1028px) {
+  /* footer */
+  .contact-text {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 905px) {
+  /* footer */
+  .contact-text {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 783px) {
+  /* footer */
+  .contact-text {
+    font-size: 0.9em;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   /* body */
   body {
@@ -99,7 +174,6 @@ p {
   }
 }
 
-/* mobile */
 @media only screen and (max-width: 767.5px) {
   /* body */
   body {
@@ -136,9 +210,19 @@ p {
   .pc-show {
     display: none;
   }
+
+  /* footer */
+  .container-footer {
+    padding-left: 1em;
+  }
+  .footer-body {
+    padding-top: 1em;
+  }
+  .contact-text {
+    font-size: 1.4em;
+  }
 }
 
-/* mobile */
 @media only screen and (max-width: 344px) {
   /* mega menu */
   .navbar-brand {
@@ -146,7 +230,6 @@ p {
   }
 }
 
-/* mobile */
 @media only screen and (max-width: 334px) {
   /* mega menu */
   .navbar-brand {
@@ -154,7 +237,6 @@ p {
   }
 }
 
-/* mobile */
 @media only screen and (max-width: 324px) {
   /* logo */
   .navbar-brand .subtitle {
@@ -162,7 +244,6 @@ p {
   }
 }
 
-/* mobile */
 @media only screen and (max-width: 244px) {
   /* logo */
   .navbar-brand .title {
@@ -176,7 +257,6 @@ p {
   }
 }
 
-/* mobile */
 @media only screen and (max-width: 214px) {
   /* toggle  */
   .navbar-toggle {
@@ -194,6 +274,7 @@ p {
   color: #666;
   border-radius: 5px;
   text-decoration: none;
+  box-shadow: 2px 2px 2px gray;
 }
 #topButton:hover {
   background-color: #ddd;
