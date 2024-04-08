@@ -296,3 +296,8 @@ footer p {
 .bk-white {
   background-color: white;
 }
+
+.link-white:hover {
+  color: white;
+}
+
